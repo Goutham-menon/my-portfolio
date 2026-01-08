@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutham Divakaran S Menon | Sports Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e293b;
+            --text-light: #f8fafc;
+            --accent-color: #38bdf8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f1f5f9;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--secondary-color);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: var(--text-light);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=80');
+            background-size: cover;
+            color: white;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: #cbd5e1;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background: white;
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .social-links a {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GD Menon</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Goutham Divakaran S Menon</h1>
+        <p>Sports Data Analyst | Int. M.Sc. Data Science</p>
+        <p style="font-size: 1rem; margin-top: 20px;">I transform complex datasets into actionable insights, bridging the gap between raw numbers and winning athletic strategies.</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>I am a data-driven strategist dedicated to uncovering the stories hidden within sports metrics. By blending advanced analytical techniques with a deep understanding of performance, I specialize in player scouting and tactical optimization.</p>
+            <div style="margin-top: 30px;">
+                <strong>Key Skills:</strong><br>
+                Python (Pandas, Scikit-learn) • Reinforcement Learning • SQL • Tableau • Power BI • Machine Learning • Statistics
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" style="background: #e2e8f0;">
+        <h2>Experience & Education</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="experience-item">
+                <h3>Data Analyst Intern</h3>
+                <p><strong>TCR Cooperative Bank</strong> | Previous Internship</p>
+                <ul>
+                    <li>Performed Exploratory Data Analysis (EDA) on banking datasets to identify trends.</li>
+                    <li>Developed financial visualization reports using SQL and Excel to assist decision-making.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Integrated M.Sc. Data Science</h3>
+                <p>Ongoing Education</p>
+                <p>Focusing on advanced computational methods, statistical modeling, and deep learning architectures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>RL Match Result Predictor</h3>
+                <p>An autonomous Reinforcement Learning agent that learns optimal prediction policies by maximizing rewards based on match result accuracy.</p>
+                <div class="project-tag">Python • OpenAI Gym • SB3</div>
+            </div>
+            <div class="project-card">
+                <h3>Hybrid Prediction Engine</h3>
+                <p>Comparative analysis of XGBoost and LSTM (Deep Learning) models to forecast game outcomes using historical team form and player data.</p>
+                <div class="project-tag">TensorFlow • Scikit-learn</div>
+            </div>
+            <div class="project-card">
+                <h3>Gym Management System</h3>
+                <p>A full-cycle application designed to manage member registrations, subscription plans, and database records efficiently.</p>
+                <div class="project-tag">Python • SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <p>I am always open to discussing sports analytics, data science projects, or potential opportunities.</p>
+            <p><strong>Email:</strong> gmd200410@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/goutham-divarakan-s-menon-624909318/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Goutham Divakaran S Menon. All rights reserved.
+    </footer>
+
+</body>
+</html>
